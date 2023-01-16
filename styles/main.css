@@ -1,5 +1,5 @@
 body {
-  background: rgb(0, 0, 0, .5);
+  background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
 }
 
 h1 {
@@ -12,7 +12,7 @@ h2 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 h3 {
-  color: white;
+  color: rgb(151, 148, 148);
   font-family: monospace;
   font-weight: 100;
 }
