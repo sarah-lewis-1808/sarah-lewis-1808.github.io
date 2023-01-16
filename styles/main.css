@@ -37,8 +37,8 @@ h3 {
     text-align: center;
   }
   .subhead-div {
-    width: auto;
-    margin: 10 auto;
+    margin: auto;
+    max-width: 900px;
     padding: 10px;
   }
   .date-div {
