@@ -1,57 +1,98 @@
-body {
-  background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+#background {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, #d7d8c2, #ebe0b9, #c7c9b0, #acacb1, black); 
 }
-
-h1 {
-  color: rgba(198, 174, 102, 0.59);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-h2 {
-  color: black;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
-h3 {
-  color: rgb(151, 148, 148);
-  font-family: monospace;
-  font-weight: 100;
-}
-
-.images {
-  display: block;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-  p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 20px;
+  #home-images {
+  position: absolute;
+  left: 5%;
+	max-width: 90%;
+	border-radius: 3px;
+    
   }
+  #main-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height: 80px;
 
-  .header-div {
-    width: auto;
-    margin: 10px;
-    padding: 10px;
-    background: rgb(0, 0, 0, .7);
-    border-radius: 5px;
+    background:#050307;
+    color: rgb(241, 241, 231);
     text-align: center;
   }
-  .subhead-div {
-    margin: auto;
-    max-width: 900px;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    width:100%;
+    height: 20px;
+    background-color: black;
+
+  }
+  
+  #menu-button {
+    display: inline-block;
+    list-style-type: none;
+    width: 25%;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .container {
+      display: grid;  
+      grid-template-columns: 100px 100px 100px;  
+      grid-template-rows: 100% 100%;  
+  }
+  
+  #home-body {
+  position: relative;
+  left: 5%;
+	max-width: 90%;
+	border-radius: 3px;
+  }
+
+  div {
+    overflow: auto;
+  }
+  
+  p {
+    text-align: justify;
+  }
+
+  footer {
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    color: white;
+    justify-content: center;
+  }
+
+  span {
     padding: 10px;
-  }
-  .date-div {
-    width: auto;
-  }
-  .body-div {
-    width: auto;
-    padding: 20px;
-    margin: 10px;
-    background-color: rgb(255, 228, 196, .5);
-    border-style: solid;
-    border-width: 2px;
-    border-color: gray;
-    border-radius: 5pt;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: flex;
+    width: 50%;
+    justify-content: center;
   }
