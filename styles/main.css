@@ -8,6 +8,9 @@
     height: 100%;
     background: linear-gradient(white, #d7d8c2, #ebe0b9, #c7c9b0, #acacb1, black); 
 }
+  #topofpage {
+    margin: 0;
+  }
   #home-images {
   position: absolute;
   left: 5%;
