@@ -1,11 +1,6 @@
-
- @media screen and (min-width: 601px) {
-   {
-    font-size: 80px;
-  }
-}
-
 #background {
+    border:solid;
+    border-width: 5px;
     position: fixed;
     padding: 0;
     margin: 0;
@@ -13,96 +8,91 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(white, #d7d8c2, #ebe0b9, #c7c9b0, #acacb1, black); 
+    background-color:bisque;
 }
-  #topofpage {
-    margin: 0;
-  }
-  #home-images {
-  position: absolute;
-  left: 5%;
-	max-width: 90%;
-	border-radius: 3px;
-    
-  }
-  #main-menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width:100%;
-    height: 80px;
 
-    background:#050307;
-    color: rgb(241, 241, 231);
+.body-all {
+  display: flexbox;
+  height: 100%;
+  width: 100%;
+  background-color:blanchedalmond;
+  
+  border: solid;
+  border-width: 5px;
+  border-color: brown;
+}
+
+  .title {
     text-align: center;
+    border: solid;
+    border-width: 5px;
+    border-color: orange;
   }
 
+  #main-menu {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: auto; 
+
+    border: solid;
+    border-width: 5px;
+    border-color: purple;
+  }
+  
   nav {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top: 80px;
-    width:100%;
-    height: 20px;
-    background-color: black;
-
+    flex-flow: row wrap;
+    border: solid;
+    border-width: 5px;
+    border-color: yellowgreen;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: auto;
   }
   
-  #menu-button {
-    display: inline-block;
-    list-style-type: none;
-    width: 25%;
-    height: 20px;
-    background-color: black;
-    text-align: center;
-
-  }
-
+  .nav-a { 
+    display: flex;
+    flex-grow: 1;
+    justify-content:center;
+    border: solid;
+    border-width: 5px;
+    border-color: aqua;  
+  } 
+  
   a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
-
-  .container {
-      display: grid;  
-      grid-template-columns: 100px 100px 100px;  
-      grid-template-rows: 100% 100%;  
-  }
   
-  #home-body {
-  position: relative;
-  left: 5%;
-	max-width: 90%;
-	border-radius: 3px;
-  }
+  #content {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    text-align: center;
+    margin: 5% 15% 5% 15%;
 
-  div {
-    overflow: auto;
-  }
-  
-  p {
-    text-align: justify;
+    border: solid;
+    border-color: orange;
+    border-width: 5px;
   }
 
   footer {
     display: flex;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    background-color: black;
-    padding-top: 12px;
-    padding-bottom: 5px;
-    color: white;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+    border: solid;
+    border-color: orange;
+    border-width: 5px;
   }
 
-  span {
-    padding: 10px;
-    display: flex;
-    width: 50%;
-    justify-content: center;
+  footer div {
+    padding:5px;
   }
