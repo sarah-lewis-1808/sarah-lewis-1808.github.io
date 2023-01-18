@@ -130,14 +130,17 @@
   #profile-pic {
     display: flex;
     justify-content: center;
+    /*
     max-width: 150px;
     min-width: 100px;
+    */
     padding: 5%;
   }
   
   #profile-pic img {
     border-radius: 50%;
-    
+    max-width: 150px;
+    min-width: 100px;
   }
   
 
