@@ -1,35 +1,34 @@
-.body-all {
-  display: flexbox;
-  flex-direction: column;
-  align-content: space-between;
-  min-height: 100vh;
-  width: 100%;
-  margin: 0px;
-  background-color:blanchedalmond;
+/* ALL PAGES */
+  .body-all {
+    display: flexbox;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background-color:blanchedalmond;
 
-  border: solid;
-  border-width: 5px;
-  border-color: brown;
-}
-
+    border: solid;
+    border-width: 5px;
+    border-color: brown;
+  }
   .title {
     text-align: center;
     border: solid;
     border-width: 5px;
     border-color: orange;
+    
   }
-
   #main-menu {
     display: flex;
     flex-direction: column;
     width:100%;
     height: auto; 
+    margin: 0px;
 
     border: solid;
     border-width: 5px;
     border-color: purple;
   }
-  
   nav {
     display: flex;
     justify-content: center;
@@ -42,7 +41,6 @@
     margin-right: 15%;
     width: auto;
   }
-  
   .nav-a { 
     display: flex;
     flex-grow: 1;
@@ -52,25 +50,21 @@
     border-width: 5px;
     border-color: aqua;  
   } 
-  
   a {
     color: black;
     text-decoration: none;
-  }
-  
-  #content {
+  }  
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin: 5% 15% 5% 15%;
     
-
     border: solid;
     border-color: orange;
     border-width: 5px;
   }
-
   footer {
     display: flex;
     flex-direction: column;
@@ -78,12 +72,53 @@
     text-align: center;
     width: 100%;
     height: auto;
+    margin: 0px;
 
     border: solid;
     border-color: orange;
     border-width: 5px;
   }
-
   footer div {
     padding:5px;
+  }
+
+  #icons {
+    min-width: 15px;
+    min-height: 15px;
+    width: 5%;
+    height: 5%;
+    
+    padding: 1%;
+  }
+
+  /* ABOUT */
+
+  
+  #contact-card {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+    margin: 0;
+
+    border:solid;
+    border-color: black;
+    border-width: 5px;
+  }
+
+  #profile-pic {
+    border-radius: 50%;
+    min-width: 10px;
+    max-width: 150px;
+    padding: 5%;
+  }
+
+  #bio {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+
+    border:solid;
+    border-color: white;
+    border-width: 5px;
   }
