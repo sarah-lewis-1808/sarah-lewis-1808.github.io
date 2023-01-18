@@ -21,7 +21,6 @@
   #main-menu {
     display: flex;
     flex-direction: column;
-    width:100%;
     height: auto; 
     margin: 0px;
 
@@ -56,8 +55,9 @@
   }  
   .content {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     margin: 5% 15% 5% 15%;
     
@@ -92,46 +92,59 @@
   }
 
   /* ABOUT */
-  #about-left {
-    display: flex;
-    flex-direction: column;
-
-    border:solid;
-    border-color: purple;
-    border-width: 5px;
-  }
   
   #contact-card {
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin: 0;
+    max-width: 500px;
 
     border:solid;
     border-color: black;
     border-width: 5px;
   }
 
-  
-
-  #contact-info {
+  .contact-info {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    width: auto;
+
     
   }
 
+  #about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 150px;
+    
+    border:solid;
+    border-color: purple;
+    border-width: 5px;
+  }
+
   #profile-pic {
-    border-radius: 50%;
-    min-width: 10px;
+    display: flex;
+    justify-content: center;
     max-width: 150px;
     padding: 5%;
   }
+  
+  #profile-pic img {
+    border-radius: 50%;
+    
+  }
+  
 
   #bio {
     display: flex;
     flex-flow: column wrap;
     text-align: center;
+    flex: 2;
+    max-width: 350px;
 
     border:solid;
     border-color: white;
@@ -142,7 +155,13 @@
     #contact-card {
         flex-direction: column;    
     }
-    #contact-info {
-        display: flex;
+    #about-left {
+      flex: 1;
+    }
+    #bio {
+      flex: 2;
     }
 }
+
+  
+  
