@@ -4,18 +4,27 @@
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    min-width: 50vh;
     margin: 0px;
-    background-color:blanchedalmond;
+    background-color:rgb(210, 222, 208);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+    /*
     border: solid;
     border-width: 5px;
     border-color: brown;
+    */
   }
   .title {
     text-align: center;
+    color: white;
+    font-size: 4vh;
+
+    /*
     border: solid;
     border-width: 5px;
     border-color: orange;
+  */
     
   }
   #main-menu {
@@ -23,35 +32,46 @@
     flex-direction: column;
     height: auto; 
     margin: 0px;
+    background-color: black;
 
+    /*
     border: solid;
     border-width: 5px;
     border-color: purple;
+    */
   }
   nav {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    border: solid;
-    border-width: 5px;
-    border-color: yellowgreen;
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
     width: auto;
+
+    /*
+    border: solid;
+    border-width: 5px;
+    border-color: yellowgreen;
+    */
   }
   .nav-a { 
     display: flex;
     flex-grow: 1;
     justify-content:center;
     padding: 1%;
+    font-size: 2.5vh;
+
+    /*
     border: solid;
     border-width: 5px;
     border-color: aqua;  
+    */
   } 
-  a {
-    color: black;
+  #main-menu a { 
+    color: white;
     text-decoration: none;
+    
   }  
   .content {
     display: flex;
@@ -59,27 +79,36 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: 5% 15% 5% 15%;
+    margin: 5% 15% 0% 15%;
+    padding: 0% 0% 5% 0%;
     
+    /*
     border: solid;
     border-color: orange;
     border-width: 5px;
+    */
   }
   footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
     height: auto;
     margin: 0px;
+    background-color: black;
+    min-width: 50vh;
 
+    /*
     border: solid;
     border-color: orange;
     border-width: 5px;
+    */
   }
   footer div {
     padding:5px;
+    color: white;
   }
 
   .icons {
@@ -99,62 +128,82 @@
     max-width: 500px;
     min-width: 200px;
     justify-content: center;
+    background-color:aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
+    /*
     border:solid;
     border-color: black;
     border-width: 5px;
+    */
   }
 
   .contact-info {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    text-align: left;
-    min-width: 100px;
-    max-width: 165px;
-  
+    font-size: 8pt;
+    margin: 5%;
+    background-color:aliceblue;
+    border-radius: 5px;
+    color: white;
+
+    /*
+    border:solid;
+    border-color: purple;
+    border-width: */
   }
 
   #about-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: stretch;
+    justify-content: stretch;
     flex: 1;
+    background-color:black;
+    border-radius: 5px;
+    min-width: 25vh;
     
+    /*
     border:solid;
     border-color: purple;
     border-width: 5px;
+    */
   }
 
   #profile-pic {
     display: flex;
     justify-content: center;
-    max-width: 50%;
-    min-width: 30%;
-    padding: 5%;
+    align-content: bottom;
+    padding: 15%;
+    
   }
   
   #profile-pic img {
-    border-radius: 50%;
     max-inline-size: 100%;
     block-size: auto;
-  
+    object-fit: contain;
+    border-radius: 50%;
   }
   
 
   #bio {
     display: flex;
     flex-flow: column wrap;
-    text-align: center;
+    text-align: justify;
     flex: 2;
     max-width: 350px;
     min-width: 200px;
+    padding: 5%;
+    font-size: 2.25vh;
 
+    /*
     border:solid;
     border-color: white;
     border-width: 5px;
+    */
   }
 
   
