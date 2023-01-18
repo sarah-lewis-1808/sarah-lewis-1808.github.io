@@ -82,7 +82,7 @@
     padding:5px;
   }
 
-  #icons {
+  .icons {
     min-width: 15px;
     min-height: 15px;
     width: 5%;
@@ -92,7 +92,14 @@
   }
 
   /* ABOUT */
+  #about-left {
+    display: flex;
+    flex-direction: column;
 
+    border:solid;
+    border-color: purple;
+    border-width: 5px;
+  }
   
   #contact-card {
     display: flex;
@@ -104,6 +111,14 @@
     border:solid;
     border-color: black;
     border-width: 5px;
+  }
+
+  
+
+  #contact-info {
+    display: flex;
+    flex-direction: row;
+    
   }
 
   #profile-pic {
@@ -122,3 +137,12 @@
     border-color: white;
     border-width: 5px;
   }
+
+  @media (max-width: 50px) {
+    #contact-card {
+        flex-direction: column;    
+    }
+    #contact-info {
+        display: flex;
+    }
+}
