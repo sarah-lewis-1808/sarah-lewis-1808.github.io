@@ -125,8 +125,8 @@
   #contact-card {
     display: flex;
     flex-flow: row wrap;
-    max-width: 500px;
-    min-width: 200px;
+    max-width: 500vh;
+    min-width: 20vh;
     justify-content: center;
     background-color:aliceblue;
     border-radius: 5px;
