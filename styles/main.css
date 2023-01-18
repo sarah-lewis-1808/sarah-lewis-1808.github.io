@@ -120,6 +120,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     flex: 1;
     
     border:solid;
@@ -130,17 +131,15 @@
   #profile-pic {
     display: flex;
     justify-content: center;
-    /*
-    max-width: 150px;
-    min-width: 100px;
-    */
+    max-width: 50%;
+    min-width: 30%;
     padding: 5%;
   }
   
   #profile-pic img {
     border-radius: 50%;
-    max-width: 150px;
-    min-width: 100px;
+    
+  
   }
   
 
