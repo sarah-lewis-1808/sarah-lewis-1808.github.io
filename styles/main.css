@@ -137,6 +137,7 @@
     border-width: 5px;
     */
   }
+
   footer div {
     padding:5px;
     color: white;
@@ -147,6 +148,11 @@
     min-height: 15px;
     max-width: 10%;
     padding: 1%;
+  }
+
+  .icons.hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
   }
 
   /* ABOUT */
