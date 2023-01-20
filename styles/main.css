@@ -475,6 +475,11 @@
 
 }
 
+.blog-content div p{
+  font-size: 1.5vmax;
+  line-height: 2;
+}
+
 .post-head h5 {
   font-size: 2vmax;
 }
