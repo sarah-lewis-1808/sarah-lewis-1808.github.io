@@ -243,7 +243,7 @@
     font-size: auto;
     color: #1d3a4d;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
-
+    line-height: 2;
     /*
     border:solid;
     border-color: orange;
@@ -264,8 +264,6 @@
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
-
-
 /*
   border: solid;
   border-color: black;
@@ -472,7 +470,8 @@
 .blog-content p {
   padding: 2% 5% 2% 5%;
   font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
-
+  font-size: 1.5vmax;
+  line-height: 2;
 }
 
 .blog-content div p{
@@ -482,5 +481,6 @@
 
 .post-head h5 {
   font-size: 2vmax;
+  padding-bottom: 3%;
 }
 
