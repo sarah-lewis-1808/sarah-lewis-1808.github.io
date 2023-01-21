@@ -483,11 +483,7 @@
   line-height: 2;
 }
 
-/*
-#core {
-  background color: #646E68;
-}
-*/
+
 
 .blog-home h3 {
   padding: 10% 5% 10% 10%;
@@ -507,11 +503,21 @@
 }
 
 .blog-home #tech {
-  background-color: #1F1A38;
+  background-color: #42033D;
+  color: #F1E3E4;
+}
+
+#tech {
+  background-color: #42033D;
   color: #F1E3E4;
 }
 
 .blog-home #story {
+  background-color: #996888;
+  color: #1F1A38;
+}
+
+#story {
   background-color: #996888;
   color: #1F1A38;
 }
@@ -523,9 +529,6 @@
   font-size: 2vmax;
   padding-bottom: 3%;
 }
-
-
-
 
 .blog-content p {
   padding: 2% 5% 2% 5%;
