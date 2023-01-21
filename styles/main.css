@@ -336,22 +336,22 @@
 .parent-div {
   display:block;
   position: relative;
-  width: auto;
+
   height: 10vh;
   border:dotted;
   border-color:rgba(27, 32, 12, 0.869);
   background-color:#9f8f99; 
   border-radius: 5px;
   opacity: .8;
-  border-width:2px;
+  border-width:5px;
   padding: 0px;
-  margin: 5%;
-  min-height: 72px;
+  margin: 2% 20% 2% 20%;
+  min-height: 200px;
 }
 
 .static-child {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border: solid;
   border-color: black;
   border-width: 2px; 
@@ -369,10 +369,11 @@
 
 .img-ex p {
   width: 25vmax;
-  padding: 2%;
+  padding: 1%;
 }
 .img-ex img {
   display: block;
+  object-fit:cover;
   max-width: 25vmax;
   height: auto;
   border-radius: 25px;
@@ -388,8 +389,8 @@
   position: absolute;
   left: 50px;
   bottom: 0px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-style: solid;
   border-color: black;
   border-width: 2px;
@@ -400,6 +401,7 @@
 .position {
   font-size: 2vmax;
   line-height: 2;
+  
 }
 
 .position p {
@@ -417,8 +419,8 @@
   display:block;
   position:relative;
   right: 20px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-style: solid;
   border-color: black;
   border-width: 2px;
@@ -431,8 +433,8 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-style: solid;
   border-color: black;
   border-width: 2px;
@@ -452,14 +454,24 @@
   padding: 5%;
   margin: 5% 12% 5% 12%;
   font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
-  
+}
+
+.quote p {
+  padding-left: 2%;
+  border-left:solid;
+  border-color: #D664BE;
+  border-width: 7px;
+  font-size: 1.5vmax;
 }
 
 .quote h5 {
   padding-left: 2%;
   border-left:solid;
-  border-color: #D664BE;
+  border-color: #42033D;
   border-width: 7px;
+  font-size: 1.5vmax;
+  line-height: 1.5;
+  color: #F8F1F2;
 }
 
 .detailing-purple {
