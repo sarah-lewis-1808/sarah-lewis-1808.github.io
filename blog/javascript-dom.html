@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<HTML lang="en">
   <head>
     <title>BLOG | JavaScript & The DOM</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
   </head> 
-  
   <body>
     <div class="background">
       <div class="header"> 
@@ -17,15 +16,15 @@
         </div>
         <div> <!--navbar-->
           <nav>
-            <a class="nav-a" href="../index.html">HOME</a>
-            <a class="nav-a" href="../about.html">ABOUT</a>
-            <a class="nav-a" href="./blog.html">BLOG</a>
-            <a class="nav-a" href="../stuff.html">STUFF</a>
+            <a class="nav-a" href="../index.HTML">HOME</a>
+            <a class="nav-a" href="../about.HTML">ABOUT</a>
+            <a class="nav-a" href="./blog.HTML">BLOG</a>
+            <a class="nav-a" href="../stuff.HTML">STUFF</a>
           </nav>
         </div>  
       </div>
       <div class="blog-title"  id="tech">
-        <a href="./blog.html"><p>BACK</p></a>
+        <a href="./blog.HTML"><p>BACK</p></a>
         <h2>JavaScript & The DOM</h2>
         <h6>27 Jan 2023 | Sprint 3 | Tech</h6>
       </div>  <!--blog title-->
@@ -51,9 +50,12 @@
             <div>
               <h3>Explain control flow and loops...</h3>
               </div>
+              <div class="img-ex">
                 <p> 
-                  I'd imagine that due to computer programming being developed mainly in the western world, when a computer learned to read a file of code, its default is to read from top to bottom, left to right, one line at a time, like most of the people in those countries would. This is known as...
+                  I'd imagine that due to computer programming being developed mainly in the western world, when a computer learned to read a file of code, its default is to read from top to bottom, left to right, one line at a time, like most of the people in those countries would if they could also read. This is known as...
               </p>
+              <img src="https://www.themailbox.com/storage/thumbnails/155202_0_LG.jpg" alt="learn-to-read-info">
+            </div>
               <h4>Control Flow</h4>
               <img src="../images/#" alt="an-image-example">
               <p>As it is quite common to need the computer to run a line of code over and over though, we don't want to have to type out the line of code every time it needs to run or the file would be very long. We can in these instances use various structures to alter the control flow so that the computer will read some lines multiple times, or skip some lines. One type of structure that alters the control flow is...</p>
@@ -72,9 +74,21 @@
               <h3>Describe the DOM and explain how you may interact with it...</h3>
               </div>
                 <p> 
-                  paragraphs of text
+                  The Document Object Model (DOM) is a set of rules for HTML that allows multiple programming languages to add, change and remove elements and attributes of an HTML file. 
+                </p>
+                <p>Without the DOM it would be difficult to know where to look to find a certain element, but with DOM knowledge we know that an HTML file will contain objects such as a root element, with parent-child relationships. The more common elements (things) are things like, a head and a body that tend to be siblings. And then there are other more customised elements like divs, spans, p tags, and heading tags. Each of those 'things' can have attributes (characteristics) of their own; 'p' tags will contain a paragraph of text, and 'a' tags will contain a href link.
               </p>
-              <img src="../images/#" alt="an-image-example">
+              <p>Each of these different 'things' that can be accessed are referred to as 'nodes'.</p>
+              <img src="../images/TheDOM.gif" alt="an-animated-gif-of-my-DOM-interpretation-using-tree-analogy">
+              <p>I've used my template blog HTML file as an example in the gif on this page. Within this HTML file there are various elements that are related to one another. An element will have a parent element at the least, all connecting back to the root element of the HTML.</p>
+              <p>JavaScript is one of those languages that uses the DOM interface to manipulate HTML framework and uses its own methods to call specific aspects of the HTML. 
+              </p>
+              <p>Most pages on the web will have some ability for a user to interact with it. Whether that's a text box for a troll to provide unwanted insight to a comment thread, or a button that changes your browser to an obnoxious unicorn theme, these things will require knowledge of the DOM in order for JavaScript to target the appropriate parts of the web page when prompted.</p> 
+              <p>For example, lets pretend its the early 2000's and I'm wanting to customise my MySpace page by adding a button on my blog page that turns on a disco theme on the navigation bar and makes the buttons sparkle. We know the navigation bar is located in a div with the class "header", that has a child div containing a nav tag. Within this nav tag are the 4 anchor tags I've used for the navigation links to the different pages on this site.</p>
+              <img src="../images/navBarLocation.jpg" alt="image-highlighting-location-of-nav-bar-in-html-file">
+              <p>As I've used anchor tags in multiple places on my site I will be wanting to target those specific anchor tags, which fortunately have a class called "nav-a".</p>
+              <p>The JavaScript could locate those anchor tags with the class "nav-a" and have the effect applied to those anchor tags only, when the button is turned on.</p>
+              <img src="../images/shiny-nav.gif" alt="animated-gif-of-sparkly-nav-example">
           </div> <!--blog question 3-->
           <div class="blog-q"> <!--blog question 4-->
             <div>
@@ -91,7 +105,7 @@
                 </p>
                 <img src="../images/cat2-object.jpg" alt="simplified-diagram-of-object">
                 <p>
-                These properties are referred to as a key value pair, which means the property name e.g. <code>temperament</code> is referred to as the <em>key</em>; and this key has a string as its <em>value</em> e.g. <code>"calm"</code>. These key values can be manipulated in a number of ways to either, access, add, remove or alter them.</p>
+                These object properties are referred to as key value pairs, which means the property name e.g. <code>temperament</code> is referred to as the <em>key</em>; and this key has a string as its <em>value</em> e.g. <code>"calm"</code>. These key values can be manipulated in a number of ways to either, access, add, remove or alter them.</p>
                 <div class="img-ex">
                 <img src="../images/reassign-value-in-object.jpg" alt="code-block-to-show-how-to-reassign-value-of-an-objects-property">
               <p>
@@ -104,7 +118,7 @@
               <p>If we look at the array <code>animals</code> below we can see it shows an array of objects. Each of these objects have an index position associated with where it is located within the array. The index begins at 0, so the third object in the array <code>rabbit1</code> would be at index number 2. This is important to note as this plays a key part when needing to call elements of the array at certain indices.</p>
               <img src="../images/animal-array.jpg" alt="simplified-diagram-of-array">
               <div class="img-ex">
-                <p>If we want to change the value of one of the data points in the array. Maybe we replace <code>cat2</code> with <code>fish1</code>... we can use the following method... <code>animals['cat2'] = 'fish1'</code></p>
+                <p>If we want to change the value of one of the data points in the array. Maybe we replace the object causing issues, <code>cat2</code>, with a new, less stressful object, <code>fish1</code>... we can use the following method... <code>animals['cat2'] = 'fish1'</code></p>
                 <img src="../images/reassign-element.jpg">
               </div>
               <p>This method uses bracket notation, whereby the array name, followed by a set of square brackets containing the element to change is followed by the new value to assign in its place. </p>
@@ -115,7 +129,7 @@
               <h3>Explain what functions are and why they are helpful...</h3>
               </div>
                 <p> 
-                  Functions can be thought of as a set of instructions that you give the computer in order to perform a certain task in a certain order.
+                  When you've already explained how to execute a simple task to someone once there's nothing worse than having to repeat yourself over and over again, right? Functions can be thought of as a set of instructions that you give the computer in order to perform a certain task in a certain order. The wonderful thing about computers is that when they've been told something once they can remember it indefinitely, so you would just need to tell them to go do the thing, and they'd know exactly what that means. 
               </p>
               <p>
                 For example if you wanted to bake something you would need ingredients and a recipe. 
@@ -128,7 +142,7 @@
               </p>
               <img src="../images/function-parameters.jpg" alt="simplified-diagram-of-function-parameters">
               <p>
-                The computer then needs to understand what steps to take in each of those recipes / parameters in order to successfully have 'baked'. These instructions go inside a set of curly brackets and can include various other JavaScript concepts like loops.
+                The computer then needs to understand what steps to take in each of those recipes / parameters in order to successfully have 'baked'. These instructions go inside a set of curly brackets and can include various other JavaScript concepts like loops that we mentioned above.
               </p>
               <p>
                 Once the steps have been run the computer needs to know what to do with the end result of the function. In this instance we've asked the computer to return 'result'. 
@@ -147,7 +161,7 @@
               <h6>*full disclosure: I am well aware that making an ice cream sundae isn't technically "baking", but its too late to change the name of the function now...</h6>
             </div>
             <p>
-
+              We've asked the computer to check the recipe name, and if it's the cakeRecipe, we want the computer to return 'cake' to the console. We've then asked it to check various other recipes and send its output accordingly. If none of those recipes in the conditional statement match what was given in the parameters then the computer knows to return the statement 'we don't have that.'
             </p>
           </div> <!--blog question 5-->
         </div> <!--blog-content-->
@@ -158,4 +172,4 @@
     <div><a href="#top">BACK TO TOP</a></div>
     <div>© Sarah Lewis 2023</div>
   </footer>
-</html>
+</HTML>
